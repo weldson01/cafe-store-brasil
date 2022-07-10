@@ -21,6 +21,7 @@ p {
 }
 main {
   background-color: #eed6c4;
+  min-height: 70vh;
 }
 .app {
   overflow-x: hidden;
