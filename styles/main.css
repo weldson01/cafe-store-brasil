@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+p {
+  text-align: justify;
+}
+main {
+  background-color: #eed6c4;
+}
+.app {
+  overflow-x: hidden;
+}
+.header {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 3em;
+  background-color: #fff3e4;
+  color: #fff;
+  padding: 1em 0px;
+  border-bottom: 1px solid #6b4f4f;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-header ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  list-style: none;
+}
+.nav-header li:hover a {
+  border-bottom: 3px solid #333;
+}
+.nav-header a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+}
+.img-wrapper {
+  width: 5em;
+  overflow: hidden;
+  cursor: pointer;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  background-color: #ac624c;
+  padding: 0 0.5em;
+  color: #f7f7f7;
+}
+footer {
+  background-color: #6b4f4f;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+footer a {
+  color: #fff;
+}
+footer h3 {
+  text-align: center;
+}
+.social_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+}
+.social_list li a {
+  color: #fff;
+  font-size: 1.8em;
+}
+.social_list li:hover a {
+  color: #eed6c4;
+}
+/* load */
+.load {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgLoad {
+  width: 10em;
+  height: 10em;
+  background-image: url("../images/Cafe-logo_mobile.png");
+  background-size: cover;
+  animation: loadingAnimation 2s infinite;
+}
+@keyframes loadingAnimation {
+  0%,
+  100% {
+    transform: rotate(0deg) translatey(-20px);
+  }
+  50% {
+    transform: rotate(0deg) translatey(20px);
+  }
+}
+/* menu Hamburguer */
+
+.hamburger {
+  display: none;
+  flex-flow: column wrap;
+  gap: 0.5em;
+  cursor: pointer;
+  position: absolute;
+  top: 45px;
+  right: 20px;
+}
+.hamburger .line {
+  width: 3em;
+  height: 0.3em;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.menu-aside {
+  position: fixed;
+  width: 40vw;
+  height: 100vh;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: calc(-40vw - 2em);
+  z-index: 3;
+  transition: 1s;
+}
+.menu-aside .close-menu {
+  width: 2em;
+  height: 10em;
+  background-color: #222;
+  position: absolute;
+  left: -2em;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+.menu-aside .close-menu:active {
+  background-color: #444;
+}
+.menu-aside .nav-menu-aside ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45vh;
+}
+.menu-aside .nav-menu-aside ul li:hover a {
+  color: #c0c0c0;
+  text-decoration: underline;
+}
+.menu-aside .nav-menu-aside ul li a {
+  color: #f7f7f7;
+}
+.show-menu {
+  right: 0;
+}

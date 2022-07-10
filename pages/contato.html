@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/contato.css" />
+    <title>Contato - Café Store Brasil</title>
+  </head>
+  <body>
+    <aside class="menu-aside">
+      <div class="close-menu">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <nav class="nav-menu-aside">
+        <ul>
+          <li>
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-address-book"></i> Contato</a>
+          </li>
+          <li>
+            <a href="./produtos.html"
+              ><i class="fa-solid fa-cart-shopping"></i> Produtos</a
+            >
+          </li>
+          <li>
+            <a href="./servicos.html"
+              ><i class="fa-solid fa-handshake"></i> Serviços</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="img-wrapper">
+            <a href="/index.html">
+              <img
+                src="../images/Cafe-logo_mobile.png"
+                alt="logo do Café store Brasil"
+              />
+            </a>
+          </div>
+          <nav class="nav-header">
+            <ul>
+              <li>
+                <a href="../index.html"
+                  ><i class="fa-solid fa-house"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="./contato.html"
+                  ><i class="fa-regular fa-address-book"></i> Contato</a
+                >
+              </li>
+              <li>
+                <a href="./produtos.html"
+                  ><i class="fa-solid fa-cart-shopping"></i> Produtos</a
+                >
+              </li>
+              <li>
+                <a href="./servicos.html"
+                  ><i class="fa-solid fa-handshake"></i> Serviços</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div>
+            <h1><span>Preencha os campos para entramos em contato</span></h1>
+          </div>
+          <form>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+              required
+            />
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="Digite seu número"
+              required
+            />
+            <select name="tema" id="tema">
+              <option disabled>Escolha o tema</option>
+              <option value="produtos">Produtos</option>
+              <option value="servicos">Serviços</option>
+              <option value="outros">Outros</option>
+            </select>
+            <input
+              type="text"
+              name="mensagem"
+              id="mensagem"
+              placeholder="Digite sua mensagem"
+              required
+            />
+            <input type="submit" name="enviar" id="enviar" value="Enviar" />
+          </form>
+        </div>
+      </main>
+      <footer>
+        <ul class="social_list">
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="../scripts/sidebarMenu.js"></script>
+    <script src="../scripts/loading.js"></script>
+  </body>
+</html>

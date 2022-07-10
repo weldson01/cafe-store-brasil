@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/produtos.css" />
+    <title>Produtos - Café Store Brasil</title>
+  </head>
+  <body>
+    <aside class="menu-aside">
+      <div class="close-menu">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <nav class="nav-menu-aside">
+        <ul>
+          <li>
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="./contato.html"
+              ><i class="fa-regular fa-address-book"></i> Contato</a
+            >
+          </li>
+          <li>
+            <a href="./produtos.html"
+              ><i class="fa-solid fa-cart-shopping"></i> Produtos</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-handshake"></i> Serviços</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="img-wrapper">
+            <a>
+              <img
+                src="../images/Cafe-logo_mobile.png"
+                alt="logo do Café store Brasil"
+              />
+            </a>
+          </div>
+          <nav class="nav-header">
+            <ul>
+              <li>
+                <a href="../index.html"
+                  ><i class="fa-solid fa-house"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="./contato.html"
+                  ><i class="fa-regular fa-address-book"></i> Contato</a
+                >
+              </li>
+              <li>
+                <a href="./produtos.html"
+                  ><i class="fa-solid fa-cart-shopping"></i> Produtos</a
+                >
+              </li>
+              <li>
+                <a href="./servicos.html"
+                  ><i class="fa-solid fa-handshake"></i> Serviços</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container-produtos">
+          <div class="busca">
+            <h2>Nossos produtos</h2>
+            <input
+              type="text"
+              id="pesquisa"
+              onkeyup="pesquisar()"
+              placeholder="Faça uma pesquisa"
+            />
+          </div>
+          <div class="lista-produtos">
+            <ul class="lista">
+              <li class="produto">
+                <div class="image">
+                  <img src="../images/produtos/cappuccino.webp" />
+                </div>
+                <div class="descricao">
+                  <h3>Cappuccino</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quo maiores ipsum doloremque amet cupiditate nisi unde
+                    corporis autem harum nostrum, cumque illum sit ea fugit
+                    sapiente eligendi quisquam iusto, nesciunt fugiat dolorem
+                    odio. A maxime reiciendis molestias, est pariatur rerum,
+                    modi fugiat officia optio expedita explicabo aut, doloremque
+                    asperiores ex?
+                  </p>
+                </div>
+              </li>
+              <li class="produto">
+                <div class="image">
+                  <img src="../images/produtos/expresso.jpg" />
+                </div>
+                <div class="descricao">
+                  <h3>Café preto</h3>
+                  <p>
+                    texto sobre o produto test teste teste teste teste teste
+                    teste teste testeteste teste testet ejgiejgiie teaete
+                  </p>
+                </div>
+              </li>
+              <li class="produto">
+                <div class="image">
+                  <img src="../images/produtos/corretto.jpg" />
+                </div>
+                <div class="descricao">
+                  <h3>Corretto</h3>
+                  <p>
+                    texto sobre o produto test teste teste teste teste teste
+                    teste teste testeteste teste testet ejgiejgiie teaete
+                  </p>
+                </div>
+              </li>
+              <li class="produto">
+                <div class="image">
+                  <img src="../images/produtos/descafeinado.jpg" />
+                </div>
+                <div class="descricao">
+                  <h3>Descafeinado</h3>
+                  <p>
+                    texto sobre o produto test teste teste teste teste teste
+                    teste teste testeteste teste testet ejgiejgiie teaete
+                  </p>
+                </div>
+              </li>
+              <li class="produto">
+                <div class="image">
+                  <img src="../images/produtos/doppio.jpg" />
+                </div>
+                <div class="descricao">
+                  <h3>Doppio</h3>
+                  <p>
+                    texto sobre o produto test teste teste teste teste teste
+                    teste teste testeteste teste testet ejgiejgiie teaete
+                  </p>
+                </div>
+              </li>
+              <li class="produto">
+                <div class="image">
+                  <img src="../images/produtos/expresso.jpg" />
+                </div>
+                <div class="descricao">
+                  <h3>Expresso</h3>
+                  <p>
+                    texto sobre o produto test teste teste teste teste teste
+                    teste teste testeteste teste testet ejgiejgiie teaete
+                  </p>
+                </div>
+              </li>
+              <li class="produto">
+                <div class="image">
+                  <img src="../images/produtos/lungo.webp" />
+                </div>
+                <div class="descricao">
+                  <h3>Lungo</h3>
+                  <p>
+                    texto sobre o produto test teste teste teste teste teste
+                    teste teste testeteste teste testet ejgiejgiie teaete
+                  </p>
+                </div>
+              </li>
+              <li class="produto">
+                <div class="image">
+                  <img src="../images/produtos/ristretto.jpg" />
+                </div>
+                <div class="descricao">
+                  <h3>Ristretto</h3>
+                  <p>
+                    texto sobre o produto test teste teste teste teste teste
+                    teste teste testeteste teste testet ejgiejgiie teaete
+                  </p>
+                </div>
+              </li>
+              <li class="produto">
+                <div class="image">
+                  <img src="../images/produtos/corretto.jpg" />
+                </div>
+                <div class="descricao">
+                  <h3>Correto Maior</h3>
+                  <p>
+                    texto sobre o produto test teste teste teste teste teste
+                    teste teste testeteste teste testet ejgiejgiie teaete
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <ul class="social_list">
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+        <a href="https://www.linkedin.com/in/weldson-carlos/">
+          <h3>Projeto desenvolvido por © Weldson Carlos</h3>
+        </a>
+      </footer>
+    </div>
+    <script src="../scripts/loading.js"></script>
+    <script src="../scripts/sidebarMenu.js"></script>
+    <script src="../scripts/produtos.js"></script>
+  </body>
+</html>

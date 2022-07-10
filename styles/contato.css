@@ -1,0 +1,68 @@
+main {
+  min-height: 60vh;
+  height: 100%;
+  background-color: #eed6c4;
+  padding: 1em 0;
+}
+main .container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container h1 {
+  color: #333;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  background-color: #ac624c;
+
+}
+
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+input,
+select {
+  width: 300px;
+  height: 2em;
+  font-size: 1em;
+  border-radius: 5px;
+  padding-left: 0.5em;
+  outline: none;
+  border: none;
+  align-self: center;
+}
+input:active {
+  opacity: 0.9;
+}
+#enviar {
+  cursor: pointer;
+}
+#enviar:hover {
+  opacity: 0.9;
+}
+#enviar:active {
+  background-color: #ac624c;
+  color: #f7f7f7;
+}
+@media (max-width: 800px) {
+  .hamburger {
+    display: flex;
+  }
+  .app {
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+  }
+  .header .container {
+    flex-direction: row;
+  }
+  .header nav {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+ 
+}
